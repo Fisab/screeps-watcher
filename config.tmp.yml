@@ -1,0 +1,24 @@
+screeps_secrets:
+  user: hello
+  password: there
+db:
+  credentials:
+    host: localhost
+    port: 27017
+    user: admin
+    password: pass
+  name: watcher
+  expireAfter: 600
+  expire_collections:
+    - "room:shard0"
+    - "user:cpu"
+    - "user:resources"
+  static_collections:
+    - rooms_subscribe
+  custom_collections:
+    - room_terrain:
+        uniq_index: room_name
+    - rooms_subscribe:
+        uniq_index: room_name
+
+shard: 0
