@@ -11,3 +11,7 @@ services:
     volumes:
       - "$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/"
     command: mongod
+  watcher:
+    image: watcher
+    depends_on:
+      - mongo

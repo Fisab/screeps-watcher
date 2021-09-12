@@ -3,7 +3,7 @@ screeps_secrets:
   password: there
 db:
   credentials:
-    host: localhost
+    host: mongo
     port: 27017
     user: admin
     password: pass
